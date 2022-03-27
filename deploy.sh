@@ -1,0 +1,1 @@
+npm run build && cd build && git init && git remote add origin https://github.com/mindfulme/minting-dapp-min && git add . && git commit -m "deployed by bot" && git push origin master --force
