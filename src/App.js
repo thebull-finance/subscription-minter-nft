@@ -100,24 +100,24 @@ function App() {
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
-  const [mintAmount, setMintAmount] = useState(1);
+  const [mintAmount, setMintAmount] = useState(3);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "",
-    SCAN_LINK: "",
+    CONTRACT_ADDRESS: "0x77ba7ad358f7251feac94e105e3adf64053e80e9",
+    SCAN_LINK: "https://bscscan.com/token/0x77ba7ad358f7251feac94e105e3adf64053e80e9#balances",
     NETWORK: {
-      NAME: "",
-      SYMBOL: "",
-      ID: 0,
+      NAME: "Binance Smart Chain",
+      SYMBOL: "BNB",
+      ID: 56,
     },
-    NFT_NAME: "",
-    SYMBOL: "",
-    MAX_SUPPLY: 1,
-    WEI_COST: 0,
-    DISPLAY_COST: 0,
-    GAS_LIMIT: 0,
-    MARKETPLACE: "",
-    MARKETPLACE_LINK: "",
-    SHOW_BACKGROUND: false,
+    NFT_NAME: "Zeon land",
+    SYMBOL: "LAND",
+    MAX_SUPPLY: 3000,
+    WEI_COST: 1000000000000000000,
+    DISPLAY_COST: 1,
+    GAS_LIMIT: 90000,
+    MARKETPLACE: "OpenSea",
+    MARKETPLACE_LINK: "https://zeon.world",
+    SHOW_BACKGROUND: true,
   });
 
   const claimNFTs = () => {
@@ -162,9 +162,6 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
-    }
     setMintAmount(newMintAmount);
   };
 
