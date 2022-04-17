@@ -102,21 +102,21 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(3);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "0x77ba7ad358f7251feac94e105e3adf64053e80e9",
-    SCAN_LINK: "https://bscscan.com/token/0x77ba7ad358f7251feac94e105e3adf64053e80e9#balances",
+    CONTRACT_ADDRESS: "0xf2F9AA168015519eBC083A40Dfdd9E2aB380d1Cc",
+    SCAN_LINK: "https://bscscan.com/token/0xf2F9AA168015519eBC083A40Dfdd9E2aB380d1Cc#balances",
     NETWORK: {
       NAME: "Binance Smart Chain",
       SYMBOL: "BNB",
       ID: 56,
     },
-    NFT_NAME: "Zeon land",
-    SYMBOL: "LAND",
-    MAX_SUPPLY: 3000,
-    WEI_COST: 1000000000000000000,
-    DISPLAY_COST: 1,
+    NFT_NAME: "TheBull ticket (3 months)",
+    SYMBOL: "TICKET",
+    MAX_SUPPLY: 1500,
+    WEI_COST: 500000000000000000,
+    DISPLAY_COST: 0.5,
     GAS_LIMIT: 90000,
     MARKETPLACE: "OpenSea",
-    MARKETPLACE_LINK: "https://zeon.world",
+    MARKETPLACE_LINK: "https://thebull.finance",
     SHOW_BACKGROUND: true,
   });
 
@@ -196,14 +196,11 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
+         
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -367,13 +364,7 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
+      
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>

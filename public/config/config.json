@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x77ba7AD358F7251FEAc94E105e3ADF64053e80e9",
-  "SCAN_LINK": "https://bscscan.com/token/0x77ba7ad358f7251feac94e105e3adf64053e80e9#balances",
+  "CONTRACT_ADDRESS": "0xf2F9AA168015519eBC083A40Dfdd9E2aB380d1Cc",
+  "SCAN_LINK": "https://bscscan.com/token/0xf2F9AA168015519eBC083A40Dfdd9E2aB380d1Cc#balances",
   "NETWORK": {
     "NAME": "Binance Smart Chain",
     "SYMBOL": "BNB",
     "ID": 56
   },
-  "NFT_NAME": "ZEON LAND",
-  "SYMBOL": "LAND",
-  "MAX_SUPPLY": 3000,
-  "WEI_COST": 1000000000000000000,
-  "DISPLAY_COST": 1,
+  "NFT_NAME": "Subscription Ticket (3 months)",
+  "SYMBOL": "Subscription (3 months)",
+  "MAX_SUPPLY": 1500,
+  "WEI_COST": 500000000000000000,
+  "DISPLAY_COST": 0.5,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://zeon.world",
+  "MARKETPLACE_LINK": "https://thebull.finance",
   "SHOW_BACKGROUND": true
 }
